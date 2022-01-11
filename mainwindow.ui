@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">background-color: rgb(rgb(133, 174, 207));</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QStackedWidget" name="stackedWidget">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>0</y>
+                        <width>1041</width>
+                        <height>561</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true"/>
+                </property>
+                <widget class="QWidget" name="page">
+                    <widget class="QLabel" name="label_2">
+                        <property name="geometry">
+                            <rect>
+                                <x>320</x>
+                                <y>40</y>
+                                <width>171</width>
+                                <height>31</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+                        </property>
+                        <property name="text">
+                            <string>World of Music</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="searchCont">
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>110</y>
+                                <width>261</width>
+                                <height>111</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Search by Continent</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="searchCountry">
+                        <property name="geometry">
+                            <rect>
+                                <x>530</x>
+                                <y>110</y>
+                                <width>231</width>
+                                <height>111</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Search by Country</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="currentLibrary">
+                        <property name="geometry">
+                            <rect>
+                                <x>290</x>
+                                <y>300</y>
+                                <width>231</width>
+                                <height>111</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>See our Current Library</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="currentLibrary_2">
+                    <widget class="QPushButton" name="pushButton">
+                        <property name="geometry">
+                            <rect>
+                                <x>50</x>
+                                <y>110</y>
+                                <width>161</width>
+                                <height>51</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Load by DFS</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="pushButton_2">
+                        <property name="geometry">
+                            <rect>
+                                <x>540</x>
+                                <y>110</y>
+                                <width>191</width>
+                                <height>51</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Load by BFS</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="backAll">
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>453</y>
+                                <width>141</width>
+                                <height>71</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Back</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="searchCountry_2">
+                    <widget class="QLabel" name="label">
+                        <property name="geometry">
+                            <rect>
+                                <x>310</x>
+                                <y>40</y>
+                                <width>191</width>
+                                <height>41</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+                        </property>
+                        <property name="text">
+                            <string>Search by Country</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="label_6">
+                        <property name="geometry">
+                            <rect>
+                                <x>120</x>
+                                <y>125</y>
+                                <width>141</width>
+                                <height>21</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+                        </property>
+                        <property name="text">
+                            <string>Pick a Country</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="label_7">
+                        <property name="geometry">
+                            <rect>
+                                <x>500</x>
+                                <y>130</y>
+                                <width>211</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+                        </property>
+                        <property name="text">
+                            <string>Choose how many Songs</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="loadCountry">
+                        <property name="geometry">
+                            <rect>
+                                <x>330</x>
+                                <y>300</y>
+                                <width>131</width>
+                                <height>51</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Load</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox" name="countryBox">
+                        <property name="geometry">
+                            <rect>
+                                <x>120</x>
+                                <y>150</y>
+                                <width>211</width>
+                                <height>24</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox" name="numberBox">
+                        <property name="geometry">
+                            <rect>
+                                <x>500</x>
+                                <y>150</y>
+                                <width>141</width>
+                                <height>24</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="backCountry">
+                        <property name="geometry">
+                            <rect>
+                                <x>40</x>
+                                <y>483</y>
+                                <width>91</width>
+                                <height>31</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Back</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="searchCont_2">
+                    <widget class="QLabel" name="label_3">
+                        <property name="geometry">
+                            <rect>
+                                <x>300</x>
+                                <y>40</y>
+                                <width>221</width>
+                                <height>31</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+                        </property>
+                        <property name="text">
+                            <string>Search by Continent</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="label_4">
+                        <property name="geometry">
+                            <rect>
+                                <x>80</x>
+                                <y>140</y>
+                                <width>151</width>
+                                <height>16</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+                        </property>
+                        <property name="text">
+                            <string>Pick a Continent</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="label_5">
+                        <property name="geometry">
+                            <rect>
+                                <x>490</x>
+                                <y>125</y>
+                                <width>211</width>
+                                <height>31</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+                        </property>
+                        <property name="text">
+                            <string>Choose how many Songs</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="loadButton">
+                        <property name="geometry">
+                            <rect>
+                                <x>330</x>
+                                <y>320</y>
+                                <width>141</width>
+                                <height>61</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Load</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox" name="continentDrop">
+                        <property name="geometry">
+                            <rect>
+                                <x>80</x>
+                                <y>160</y>
+                                <width>191</width>
+                                <height>24</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox" name="songContDrop">
+                        <property name="geometry">
+                            <rect>
+                                <x>490</x>
+                                <y>160</y>
+                                <width>151</width>
+                                <height>24</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="backCont">
+                        <property name="geometry">
+                            <rect>
+                                <x>30</x>
+                                <y>503</y>
+                                <width>91</width>
+                                <height>31</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Back</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QWidget" name="loadPage">
+                    <widget class="QLabel" name="label_8">
+                        <property name="geometry">
+                            <rect>
+                                <x>310</x>
+                                <y>10</y>
+                                <width>141</width>
+                                <height>41</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+                                color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                            <string>Your Playlist</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" name="startOver">
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>520</y>
+                                <width>101</width>
+                                <height>31</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                                font: 18pt &quot;.AppleSystemUIFont&quot;;
+                                border-width : 1.2px;
+                                border-color: rgb(0, 0, 0);
+                                border-style:inset;</string>
+                        </property>
+                        <property name="text">
+                            <string>Start Over</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="label_9">
+                        <property name="geometry">
+                            <rect>
+                                <x>30</x>
+                                <y>60</y>
+                                <width>681</width>
+                                <height>31</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+                                color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                            <string>You selected:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="playLabel">
+                        <property name="geometry">
+                            <rect>
+                                <x>30</x>
+                                <y>70</y>
+                                <width>741</width>
+                                <height>431</height>
+                            </rect>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+                                color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                            <string>ttt</string>
+                        </property>
+                    </widget>
+                </widget>
+            </widget>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>800</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
